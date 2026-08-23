@@ -9,12 +9,10 @@ public sealed class ChartService(
     ISymbolResolver symbolResolver,
     IPriceDataProviderResolver providerResolver,
     ISmaCalculator smaCalculator,
-    IChartGenerator chartGenerator)
+    IChartGenerator chartGenerator,
+    IChartConfiguration configuration)
     : IChartService
 {
-    private const int CandleCount = 100;
-    private const int MovingAveragePeriod = 20;
-
     public async Task<Result<GeneratedChart>> GenerateChartAsync(
         ChartRequest request,
         CancellationToken cancellationToken)
@@ -41,7 +39,7 @@ public sealed class ChartService(
             await provider.GetCandlesAsync(
                 symbol,
                 request.Timeframe,
-                CandleCount,
+                configuration.CandleCount,
                 cancellationToken);
 
         if (candlesResult.IsFailure)
@@ -50,7 +48,7 @@ public sealed class ChartService(
 
         var candles = candlesResult.Value!;
 
-        if (candles.Count != CandleCount)
+        if (candles.Count != configuration.CandleCount)
         {
             return Result<GeneratedChart>.Failure(
                 ApplicationErrors.InsufficientHistoricalData);
@@ -63,7 +61,7 @@ public sealed class ChartService(
         var movingAverageResult =
             smaCalculator.Calculate(
                 closingPrices,
-                MovingAveragePeriod);
+                configuration.MovingAveragePeriod);
 
         if (movingAverageResult.IsFailure)
             return Result<GeneratedChart>.Failure(

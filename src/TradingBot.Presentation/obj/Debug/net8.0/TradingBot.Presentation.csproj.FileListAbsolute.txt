@@ -58,6 +58,7 @@
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/TradingBot.Presentation.csproj.CoreCompileInputs.cache
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/TradingBot.Presentation.MvcApplicationPartsAssemblyInfo.cs
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/TradingBot.Presentation.MvcApplicationPartsAssemblyInfo.cache
+/home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/TradingBot.Presentation.sourcelink.json
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/staticwebassets.build.json
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/staticwebassets.development.json
 /home/huj/code/TradingBot/src/TradingBot.Presentation/obj/Debug/net8.0/staticwebassets/msbuild.TradingBot.Presentation.Microsoft.AspNetCore.StaticWebAssets.props

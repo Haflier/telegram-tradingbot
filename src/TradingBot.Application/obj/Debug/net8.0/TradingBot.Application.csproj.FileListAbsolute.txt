@@ -23,6 +23,7 @@
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.AssemblyInfoInputs.cache
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.AssemblyInfo.cs
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.csproj.CoreCompileInputs.cache
+/home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.sourcelink.json
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.csproj.CopyComplete
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/TradingBot.Application.dll
 /home/huj/code/TradingBot/src/TradingBot.Application/obj/Debug/net8.0/refint/TradingBot.Application.dll

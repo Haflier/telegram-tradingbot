@@ -188,6 +188,7 @@
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.AssemblyInfoInputs.cache
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.AssemblyInfo.cs
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.csproj.CoreCompileInputs.cache
+/home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.sourcelink.json
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.csproj.CopyComplete
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/TradingBot.IntegrationTests.dll
 /home/huj/code/TradingBot/tests/TradingBot.IntegrationTests/obj/Debug/net8.0/refint/TradingBot.IntegrationTests.dll

@@ -31,12 +31,16 @@ public sealed class ChartServiceTests
         var chartGenerator =
             new FakeChartGenerator();
 
+        var chartConfiguration =
+            new FakeChartConfiguration();
+
         var service =
             new ChartService(
                 symbolResolver,
                 providerResolver,
                 smaCalculator,
-                chartGenerator);
+                chartGenerator,
+                chartConfiguration);
 
         var request =
             new ChartRequest(
@@ -74,7 +78,8 @@ public sealed class ChartServiceTests
                 new FakeSymbolResolver(),
                 new FakeProviderResolver(provider),
                 new SmaCalculator(),
-                new FakeChartGenerator());
+                new FakeChartGenerator(),
+                new FakeChartConfiguration());
 
         var result =
             await service.GenerateChartAsync(
@@ -102,7 +107,8 @@ public sealed class ChartServiceTests
                 new FakeSymbolResolver(),
                 new FakeProviderResolver(provider),
                 new SmaCalculator(),
-                new FakeChartGenerator());
+                new FakeChartGenerator(),
+                new FakeChartConfiguration());
 
         var result =
             await service.GenerateChartAsync(
@@ -226,5 +232,13 @@ public sealed class ChartServiceTests
                     "BTCUSDT.png",
                     "image/png"));
         }
+    }
+
+    private sealed class FakeChartConfiguration
+          : IChartConfiguration
+    {
+        public int CandleCount => 100;
+
+        public int MovingAveragePeriod => 20;
     }
 }

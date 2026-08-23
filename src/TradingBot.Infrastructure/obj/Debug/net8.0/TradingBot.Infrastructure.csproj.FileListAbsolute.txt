@@ -27,6 +27,7 @@
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.AssemblyInfoInputs.cache
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.AssemblyInfo.cs
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.csproj.CoreCompileInputs.cache
+/home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.sourcelink.json
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.csproj.CopyComplete
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/TradingBot.Infrastructure.dll
 /home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/Debug/net8.0/refint/TradingBot.Infrastructure.dll

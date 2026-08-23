@@ -11,14 +11,14 @@ public sealed class CommandParser : ICommandParser
     private static readonly Dictionary<string, Timeframe> Timeframes =
         new(StringComparer.OrdinalIgnoreCase)
         {
-            ["1min"] = Timeframe.OneMinute,
-            ["5min"] = Timeframe.FiveMinutes,
-            ["15min"] = Timeframe.FifteenMinutes,
+            ["1m"] = Timeframe.OneMinute,
+            ["5m"] = Timeframe.FiveMinutes,
+            ["15m"] = Timeframe.FifteenMinutes,
             ["1h"] = Timeframe.OneHour,
             ["4h"] = Timeframe.FourHours,
             ["1d"] = Timeframe.OneDay,
             ["1w"] = Timeframe.OneWeek,
-            ["1month"] = Timeframe.OneMonth
+            ["1mo"] = Timeframe.OneMonth
         };
 
     public Result<ChartRequest> ParseChartCommand(string text)

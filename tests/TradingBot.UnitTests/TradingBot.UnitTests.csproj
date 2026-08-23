@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\TradingBot.Application\TradingBot.Application.csproj" />
+    <ProjectReference Include="..\..\src\TradingBot.Infrastructure\TradingBot.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

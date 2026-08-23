@@ -16,6 +16,7 @@
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.AssemblyInfoInputs.cache
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.AssemblyInfo.cs
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.csproj.CoreCompileInputs.cache
+/home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.sourcelink.json
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.dll
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/refint/TradingBot.Domain.dll
 /home/huj/code/TradingBot/src/TradingBot.Domain/obj/Debug/net8.0/TradingBot.Domain.pdb
