@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LisbU4TC37eAsuZBMl2I1kW4CONgmyzUB+mM+0c2JxzacQs/+y4MN31McRYiMipzjojGX0WVnexUUoQb4/NQXg==",
+  "success": true,
+  "projectFilePath": "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/huj/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.29/microsoft.aspnetcore.app.ref.8.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}

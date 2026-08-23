@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TradingBot.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TradingBot.Application": "1.0.0",
+          "TradingBot.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TradingBot.Infrastructure.dll": {}
+        }
+      },
+      "TradingBot.Application/1.0.0": {
+        "dependencies": {
+          "TradingBot.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TradingBot.Application.dll": {}
+        }
+      },
+      "TradingBot.Domain/1.0.0": {
+        "runtime": {
+          "TradingBot.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TradingBot.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TradingBot.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TradingBot.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

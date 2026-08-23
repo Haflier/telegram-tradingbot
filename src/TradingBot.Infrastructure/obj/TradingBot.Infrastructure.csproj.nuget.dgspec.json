@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/TradingBot.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj",
+        "projectName": "TradingBot.Application",
+        "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj",
+        "packagesPath": "/home/huj/.nuget/packages/",
+        "outputPath": "/home/huj/code/TradingBot/src/TradingBot.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/huj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj": {
+                "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.29, 8.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj",
+        "projectName": "TradingBot.Domain",
+        "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj",
+        "packagesPath": "/home/huj/.nuget/packages/",
+        "outputPath": "/home/huj/code/TradingBot/src/TradingBot.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/huj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.29, 8.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/TradingBot.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/TradingBot.Infrastructure.csproj",
+        "projectName": "TradingBot.Infrastructure",
+        "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/TradingBot.Infrastructure.csproj",
+        "packagesPath": "/home/huj/.nuget/packages/",
+        "outputPath": "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/huj/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj": {
+                "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj"
+              },
+              "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj": {
+                "projectPath": "/home/huj/code/TradingBot/src/TradingBot.Domain/TradingBot.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.29, 8.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
