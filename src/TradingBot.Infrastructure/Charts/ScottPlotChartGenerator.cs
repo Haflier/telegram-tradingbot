@@ -67,7 +67,7 @@ public sealed class ScottPlotChartGenerator(
         plot.XLabel("Time");
         plot.YLabel("Price");
 
-        using var memoryStream =
+        var memoryStream =
             new MemoryStream();
 
         var temporaryPath =
