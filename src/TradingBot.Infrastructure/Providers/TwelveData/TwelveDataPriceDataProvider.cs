@@ -171,7 +171,6 @@ public sealed class TwelveDataPriceDataProvider(
             Timeframe.FourHours => "4h",
             Timeframe.OneDay => "1day",
             Timeframe.OneWeek => "1week",
-            Timeframe.OneMonth => "1month",
 
             _ => throw new ArgumentOutOfRangeException(
                 nameof(timeframe),

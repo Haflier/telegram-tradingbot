@@ -18,7 +18,6 @@ public sealed class CommandParser : ICommandParser
             ["4h"] = Timeframe.FourHours,
             ["1d"] = Timeframe.OneDay,
             ["1w"] = Timeframe.OneWeek,
-            ["1mo"] = Timeframe.OneMonth
         };
 
     public Result<ChartRequest> ParseChartCommand(string text)

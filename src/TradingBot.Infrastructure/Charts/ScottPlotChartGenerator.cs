@@ -194,7 +194,8 @@ public sealed class ScottPlotChartGenerator(
                 new GeneratedChart(
                     memoryStream,
                     $"{data.Symbol.Value}.png",
-                    "image/png"));
+                    "image/png",
+                    string.Empty));
         }
         finally
         {

@@ -21,8 +21,44 @@ public sealed class TelegramBotHandler(
             return;
         }
 
+        /*
+         * Handle /start separately.
+         */
+        if (message.Text.Trim().Equals(
+                "/start",
+                StringComparison.OrdinalIgnoreCase) ||
+            message.Text.Trim().StartsWith(
+                "/start@",
+                StringComparison.OrdinalIgnoreCase))
+        {
+            await telegramSender.SendTextAsync(
+                message.ChatId,
+                """
+                <b>Welcome to Cryptockerbot! 📈</b>
+
+                Get market charts and price information directly from Telegram.
+
+                <b>Usage:</b>
+                <code>/chart BTC 1d</code>
+
+                <b>Examples:</b>
+                <code>/chart BTC 4h</code>
+                <code>/chart ETH 1h</code>
+                <code>/chart AAPL 1d</code>
+
+                <b>Supported timeframes:</b>
+                <code>1m</code> <code>5m</code> <code>15m</code>
+                <code>1h</code> <code>4h</code> <code>1d</code>
+                <code>1w</code> <code>1mo</code>
+                """,
+                cancellationToken);
+
+            return;
+        }
+
         var commandResult =
-            commandParser.ParseChartCommand(message.Text);
+            commandParser.ParseChartCommand(
+                message.Text);
 
         if (commandResult.IsFailure)
         {
@@ -49,9 +85,12 @@ public sealed class TelegramBotHandler(
             return;
         }
 
+        var chart =
+            chartResult.Value!;
+
         await telegramSender.SendChartAsync(
             message.ChatId,
-            chartResult.Value!,
+            chart,
             cancellationToken);
     }
 }

@@ -2,7 +2,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Telegram.Bot;
 using Telegram.Bot.Types;
-using TradingBot.Application.Abstractions;
+using Telegram.Bot.Types.Enums;
 using TradingBot.Application.DTOs;
 using TradingBot.Application.Errors;
 using TradingBot.Application.Results;
@@ -13,7 +13,7 @@ namespace TradingBot.Infrastructure.Telegram;
 public sealed class TelegramSender(
     IOptions<TelegramOptions> options,
     ILogger<TelegramSender> logger)
-    : ITelegramSender
+    : TradingBot.Application.Abstractions.ITelegramSender
 {
     private readonly ITelegramBotClient _client =
         new TelegramBotClient(options.Value.BotToken);
@@ -63,11 +63,13 @@ public sealed class TelegramSender(
 
             using var stream = chart.Content;
 
-            await _client.SendDocument(
+            await _client.SendPhoto(
                 chatId,
                 InputFile.FromStream(
                     stream,
                     chart.FileName),
+                caption: chart.Caption,
+                parseMode: ParseMode.Html,
                 cancellationToken: cancellationToken);
 
             return Result.Success();

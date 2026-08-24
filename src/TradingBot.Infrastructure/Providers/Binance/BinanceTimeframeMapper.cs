@@ -14,7 +14,6 @@ public static class BinanceTimeframeMapper
             Timeframe.FourHours => "4h",
             Timeframe.OneDay => "1d",
             Timeframe.OneWeek => "1w",
-            Timeframe.OneMonth => "1mo",
 
             _ => throw new ArgumentOutOfRangeException(
                 nameof(timeframe),

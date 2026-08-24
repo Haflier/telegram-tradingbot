@@ -85,7 +85,7 @@ public sealed class TelegramBotHandlerTests
             sender.LastChatId);
 
         Assert.Equal(
-            "The command format is invalid.",
+            "The command format is invalid.\nUsage: /chart BTC 1d",
             sender.LastText);
 
         Assert.False(sender.SendChartCalled);

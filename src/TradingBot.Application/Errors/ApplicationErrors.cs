@@ -7,12 +7,12 @@ public static class ApplicationErrors
     public static Error InvalidCommand =>
         new(
             "InvalidCommand",
-            "The command format is invalid.");
+            "The command format is invalid.\nUsage: /chart BTC 1d");
 
     public static Error InvalidTimeframe =>
         new(
             "InvalidTimeframe",
-            "The requested timeframe is not supported.");
+            "The requested timeframe is not supported.\nSupported timeframes: 1m 5m 15m 1h 4h 1d 1w");
 
     public static Error InvalidSymbol =>
         new(

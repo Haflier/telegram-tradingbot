@@ -13,7 +13,6 @@ public sealed class BinanceTimeframeMapperTests
     [InlineData(Timeframe.FourHours, "4h")]
     [InlineData(Timeframe.OneDay, "1d")]
     [InlineData(Timeframe.OneWeek, "1w")]
-    [InlineData(Timeframe.OneMonth, "1mo")]
     public void Map_ReturnsCorrectBinanceInterval(
         Timeframe timeframe,
         string expected)
