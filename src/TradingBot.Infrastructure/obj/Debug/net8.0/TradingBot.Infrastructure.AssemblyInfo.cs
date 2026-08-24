@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TradingBot.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c175193723c7fdc224b20c55278a65d6c26c54c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f6d292997f0b60f82018d731d0924849a2460a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TradingBot.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TradingBot.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

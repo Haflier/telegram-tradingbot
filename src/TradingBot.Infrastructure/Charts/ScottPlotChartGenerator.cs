@@ -67,9 +67,6 @@ public sealed class ScottPlotChartGenerator(
         plot.XLabel("Time");
         plot.YLabel("Price");
 
-        var memoryStream =
-            new MemoryStream();
-
         var temporaryPath =
             Path.Combine(
                 Path.GetTempPath(),
@@ -85,13 +82,14 @@ public sealed class ScottPlotChartGenerator(
             var bytes =
                 File.ReadAllBytes(temporaryPath);
 
-            memoryStream.Write(bytes);
-
-            memoryStream.Position = 0;
+            var stream =
+                new MemoryStream(
+                    bytes,
+                    writable: false);
 
             return Result<GeneratedChart>.Success(
                 new GeneratedChart(
-                    memoryStream,
+                    stream,
                     $"{data.Symbol.Value}.png",
                     "image/png"));
         }
