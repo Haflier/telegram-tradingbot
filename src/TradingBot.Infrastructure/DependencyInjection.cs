@@ -6,12 +6,10 @@ using TradingBot.Infrastructure.Http;
 using TradingBot.Infrastructure.Providers.Binance;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using NodaTime;
-using YahooQuotesApi;
-using TradingBot.Infrastructure.Providers.Yahoo;
 using TradingBot.Infrastructure.Charts;
 using TradingBot.Infrastructure.Telegram;
 using TradingBot.Application.Services;
+using TradingBot.Infrastructure.Providers.TwelveData;
 
 namespace TradingBot.Infrastructure;
 
@@ -37,54 +35,37 @@ public static class DependencyInjection
                 "Binance timeout must be greater than zero.");
 
         services
-            .AddOptions<YahooOptions>()
-            .Bind(configuration.GetSection(
-                YahooOptions.SectionName))
-            .Validate(
-                options => !string.IsNullOrWhiteSpace(options.UserAgent),
-                "Yahoo UserAgent must not be empty.")
-            .Validate(
-                options => options.HistoryCacheDurationMinutes >= 0,
-                "Yahoo history cache duration cannot be negative.")
-            .ValidateOnStart();
-
-        services.AddSingleton<YahooQuotes>(serviceProvider =>
-        {
-            var options =
-                serviceProvider
-                    .GetRequiredService<
-                        IOptions<YahooOptions>>()
-                    .Value;
-
-            var loggerFactory =
-                serviceProvider
-                    .GetRequiredService<ILoggerFactory>();
-
-            return new YahooQuotesBuilder()
-                .WithLoggerFactory(loggerFactory)
-                .WithHttpUserAgent(options.UserAgent)
-                .WithHistoryCacheDuration(
-                    Duration.FromMinutes(
-                        options.HistoryCacheDurationMinutes))
-                .Build();
-        });
-
-        services.AddScoped<IPriceDataProvider,
-            YahooPriceDataProvider>();
+          .AddOptions<TwelveDataOptions>()
+          .Bind(configuration.GetSection(
+              TwelveDataOptions.SectionName))
+          .Validate(
+              options => !string.IsNullOrWhiteSpace(options.ApiKey),
+              "Twelve Data ApiKey must not be empty.")
+          .Validate(
+              options =>
+                  Uri.TryCreate(
+                      options.BaseUrl,
+                      UriKind.Absolute,
+                      out _),
+             "Twelve Data BaseUrl must be a valid absolute URI.")
+          .Validate(
+              options => options.TimeoutSeconds > 0,
+             "Twelve Data timeout must be greater than zero.")
+          .ValidateOnStart();
 
         services.AddHttpClient(
-            HttpClientNames.Binance,
+            "TwelveData",
             (serviceProvider, client) =>
             {
                 var options =
                     serviceProvider
                         .GetRequiredService<
-                            Microsoft.Extensions.Options
-                                .IOptions<BinanceOptions>>()
+                            IOptions<TwelveDataOptions>>()
                         .Value;
 
                 client.BaseAddress =
-                    new Uri(options.BaseUrl);
+                    new Uri(
+                        options.BaseUrl.TrimEnd('/') + "/");
 
                 client.Timeout =
                     TimeSpan.FromSeconds(
@@ -94,11 +75,48 @@ public static class DependencyInjection
                     "TradingBot/1.0");
             });
 
+        services.AddScoped<ITwelveDataClient>(
+            serviceProvider =>
+            {
+                var factory =
+                    serviceProvider
+                        .GetRequiredService<IHttpClientFactory>();
+
+                return new TwelveDataClient(
+                    factory.CreateClient("TwelveData"),
+                    serviceProvider.GetRequiredService<
+                        IOptions<TwelveDataOptions>>(),
+                    serviceProvider.GetRequiredService<
+                       ILogger<TwelveDataClient>>());
+            });
+
+        services.AddScoped<IPriceDataProvider,
+            TwelveDataPriceDataProvider>();
+
+        services.AddHttpClient(
+          HttpClientNames.Binance,
+            (serviceProvider, client) =>
+            {
+                var options =
+                  serviceProvider
+                        .GetRequiredService<
+                            Microsoft.Extensions.Options
+                                .IOptions<BinanceOptions>>()
+                                .Value;
+
+                client.BaseAddress =
+                                    new Uri(options.BaseUrl);
+
+                client.Timeout =
+                                    TimeSpan.FromSeconds(
+                                        options.TimeoutSeconds);
+
+                client.DefaultRequestHeaders.UserAgent.ParseAdd(
+                    "TradingBot/1.0");
+            });
+
         services.AddScoped<IPriceDataProvider,
             BinancePriceDataProvider>();
-
-        services.AddSingleton<IYahooHistoryClient,
-            YahooHistoryClient>();
 
         services.AddScoped<IChartGenerator, ScottPlotChartGenerator>();
 
@@ -117,7 +135,7 @@ public static class DependencyInjection
             .Validate(
                 options => !string.IsNullOrWhiteSpace(options.BotToken),
                 "Telegram BotToken must not be empty.")
-            .Validate(
+           .Validate(
                 options => options.TimeoutSeconds > 0,
                 "Telegram timeout must be greater than zero.")
             .ValidateOnStart();

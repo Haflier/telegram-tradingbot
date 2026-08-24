@@ -127,31 +127,6 @@
           }
         }
       },
-      "Microsoft.Extensions.AmbientMetadata.Application/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "10.0.11",
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.AmbientMetadata.Application.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.Extensions.Compliance.Abstractions/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
-          "Microsoft.Extensions.ObjectPool": "8.0.10"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Compliance.Abstractions.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
       "Microsoft.Extensions.Configuration/10.0.11": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.11",
@@ -206,17 +181,6 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.AutoActivation/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.1"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
       "Microsoft.Extensions.Diagnostics/10.0.11": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "10.0.11",
@@ -243,43 +207,6 @@
           }
         }
       },
-      "Microsoft.Extensions.Diagnostics.ExceptionSummarization/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        }
-      },
-      "Microsoft.Extensions.Hosting.Abstractions/8.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.11",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
-          "Microsoft.Extensions.Diagnostics.Abstractions": "10.0.11",
-          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
       "Microsoft.Extensions.Http/10.0.11": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.11",
@@ -293,35 +220,6 @@
           "lib/net8.0/Microsoft.Extensions.Http.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.1126.37416"
-          }
-        }
-      },
-      "Microsoft.Extensions.Http.Diagnostics/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.AutoActivation": "8.10.0",
-          "Microsoft.Extensions.Http": "10.0.11",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.11",
-          "Microsoft.Extensions.Telemetry": "8.10.0",
-          "Microsoft.IO.RecyclableMemoryStream": "3.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Http.Diagnostics.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.Extensions.Http.Resilience/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "10.0.11",
-          "Microsoft.Extensions.Http.Diagnostics": "8.10.0",
-          "Microsoft.Extensions.ObjectPool": "8.0.10",
-          "Microsoft.Extensions.Resilience": "8.10.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Http.Resilience.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
           }
         }
       },
@@ -347,32 +245,6 @@
           "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.1126.37416"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Configuration/8.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "10.0.11",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.11",
-          "Microsoft.Extensions.Configuration.Binder": "10.0.11",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
-          "Microsoft.Extensions.Logging": "10.0.11",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.11",
-          "Microsoft.Extensions.Options": "10.0.11",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Configuration.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
-      "Microsoft.Extensions.ObjectPool/8.0.10": {
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46804"
           }
         }
       },
@@ -408,59 +280,6 @@
           "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.1126.37416"
-          }
-        }
-      },
-      "Microsoft.Extensions.Resilience/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics": "10.0.11",
-          "Microsoft.Extensions.Diagnostics.ExceptionSummarization": "8.10.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.11",
-          "Microsoft.Extensions.Telemetry.Abstractions": "8.10.0",
-          "Polly.Extensions": "8.4.2",
-          "Polly.RateLimiting": "8.4.2"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Resilience.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.Extensions.Telemetry/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.AmbientMetadata.Application": "8.10.0",
-          "Microsoft.Extensions.DependencyInjection.AutoActivation": "8.10.0",
-          "Microsoft.Extensions.Logging.Configuration": "8.0.1",
-          "Microsoft.Extensions.ObjectPool": "8.0.10",
-          "Microsoft.Extensions.Telemetry.Abstractions": "8.10.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Telemetry.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.Extensions.Telemetry.Abstractions/8.10.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Compliance.Abstractions": "8.10.0",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.11",
-          "Microsoft.Extensions.ObjectPool": "8.0.10",
-          "Microsoft.Extensions.Options": "10.0.11"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Telemetry.Abstractions.dll": {
-            "assemblyVersion": "8.10.0.0",
-            "fileVersion": "8.1000.24.50207"
-          }
-        }
-      },
-      "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
-        "runtime": {
-          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -795,39 +614,6 @@
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
             "assemblyVersion": "5.11.0.10",
             "fileVersion": "5.11.0.10"
-          }
-        }
-      },
-      "Polly.Core/8.4.2": {
-        "runtime": {
-          "lib/net8.0/Polly.Core.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.4.2.3950"
-          }
-        }
-      },
-      "Polly.Extensions/8.4.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.11",
-          "Microsoft.Extensions.Options": "10.0.11",
-          "Polly.Core": "8.4.2"
-        },
-        "runtime": {
-          "lib/net8.0/Polly.Extensions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.4.2.3950"
-          }
-        }
-      },
-      "Polly.RateLimiting/8.4.2": {
-        "dependencies": {
-          "Polly.Core": "8.4.2",
-          "System.Threading.RateLimiting": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Polly.RateLimiting.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.4.2.3950"
           }
         }
       },
@@ -1510,14 +1296,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Threading.RateLimiting/8.0.0": {
-        "runtime": {
-          "lib/net8.0/System.Threading.RateLimiting.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        }
-      },
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1644,18 +1422,6 @@
         }
       },
       "xunit.runner.visualstudio/2.4.5": {},
-      "YahooQuotesApi/7.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Http.Resilience": "8.10.0",
-          "NodaTime": "3.3.3"
-        },
-        "runtime": {
-          "lib/net8.0/YahooQuotesApi.dll": {
-            "assemblyVersion": "7.0.0.219",
-            "fileVersion": "7.0.0.219"
-          }
-        }
-      },
       "TradingBot.Application/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
@@ -1678,8 +1444,7 @@
           "ScottPlot": "5.1.59",
           "Telegram.Bot": "22.8.0",
           "TradingBot.Application": "1.0.0",
-          "TradingBot.Domain": "1.0.0",
-          "YahooQuotesApi": "7.0.0"
+          "TradingBot.Domain": "1.0.0"
         },
         "runtime": {
           "TradingBot.Infrastructure.dll": {}
@@ -1735,20 +1500,6 @@
       "path": "microsoft.codecoverage/17.6.0",
       "hashPath": "microsoft.codecoverage.17.6.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.AmbientMetadata.Application/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uSLKFK7IKLsgc3rqryPDH6qIOsEIagG/XGiq8osbgIZQpBff5TA28+3XwX3JyUf/h3lzqmnbyGsfOZf1v66BAA==",
-      "path": "microsoft.extensions.ambientmetadata.application/8.10.0",
-      "hashPath": "microsoft.extensions.ambientmetadata.application.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Compliance.Abstractions/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SlVnMqZjYh7409vddtcoQ1N2HEtEQUHbYPuOOJZ/zNSvbJT4x78BBHaWUTKNEfwdg+MEftRVL63BLB6CVdOCRg==",
-      "path": "microsoft.extensions.compliance.abstractions/8.10.0",
-      "hashPath": "microsoft.extensions.compliance.abstractions.8.10.0.nupkg.sha512"
-    },
     "Microsoft.Extensions.Configuration/10.0.11": {
       "type": "package",
       "serviceable": true,
@@ -1784,13 +1535,6 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.11",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.AutoActivation/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xN0s32RZHnMDr08/fu1qoC7BSEoTL1HlKQCffsNlNtMN5EJnTLEAHS/ES/ugP8l3x9uoaqi//RA7Rkj2LZpWDg==",
-      "path": "microsoft.extensions.dependencyinjection.autoactivation/8.10.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.autoactivation.8.10.0.nupkg.sha512"
-    },
     "Microsoft.Extensions.Diagnostics/10.0.11": {
       "type": "package",
       "serviceable": true,
@@ -1805,47 +1549,12 @@
       "path": "microsoft.extensions.diagnostics.abstractions/10.0.11",
       "hashPath": "microsoft.extensions.diagnostics.abstractions.10.0.11.nupkg.sha512"
     },
-    "Microsoft.Extensions.Diagnostics.ExceptionSummarization/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ajZg6WnvwSi8/gpNWQ7ruoEooOdpwNf/DR9Yck3b2AVrorPuJWJjWFpgfCAwph4DO4PPazB+6ifcWBHWm4QBZA==",
-      "path": "microsoft.extensions.diagnostics.exceptionsummarization/8.10.0",
-      "hashPath": "microsoft.extensions.diagnostics.exceptionsummarization.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
-      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Hosting.Abstractions/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nHwq9aPBdBPYXPti6wYEEfgXddfBrYC+CQLn+qISiwQq5tpfaqDZSKOJNxoe9rfQxGf1c+2wC/qWFe1QYJPYqw==",
-      "path": "microsoft.extensions.hosting.abstractions/8.0.1",
-      "hashPath": "microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512"
-    },
     "Microsoft.Extensions.Http/10.0.11": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ujx8RvcKzkxPFBguwgiygbwWVHVK0P7HFlNJ6I0JBRb28tzwe42jixBoA+dGmqG9IHepPVcm04vv2IDnU93ekA==",
       "path": "microsoft.extensions.http/10.0.11",
       "hashPath": "microsoft.extensions.http.10.0.11.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Http.Diagnostics/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lLvjt7N4tUwXd1DJvsC7K12T1ZzmQpFBxFA6moi6A7SdJw5JLvhzXULsQUt06mxeu0tjkrR0neJJTsO8OZs4Uw==",
-      "path": "microsoft.extensions.http.diagnostics/8.10.0",
-      "hashPath": "microsoft.extensions.http.diagnostics.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Http.Resilience/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-b+CnTcqlmg4vppGmxsLifY4gnMsE7XDhH1VRxpIn7NBksCoCqJn/2U+TTH9LjpNrAG6tfnGT8m4PP6WaDdPoMQ==",
-      "path": "microsoft.extensions.http.resilience/8.10.0",
-      "hashPath": "microsoft.extensions.http.resilience.8.10.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/10.0.11": {
       "type": "package",
@@ -1860,20 +1569,6 @@
       "sha512": "sha512-Ljd0Uxoq5XpScD2Bg0nM/r3mwx7Ao5Uq24eo2ARxbGvqJ7Zht6rt2cJtwVRH4Cv+1ZVMdXz6TB43KbpmsxRrvQ==",
       "path": "microsoft.extensions.logging.abstractions/10.0.11",
       "hashPath": "microsoft.extensions.logging.abstractions.10.0.11.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Configuration/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QWwTrsgOnJMmn+XUslm8D2H1n3PkP/u/v52FODtyBc/k4W9r3i2vcXXeeX/upnzllJYRRbrzVzT0OclfNJtBJA==",
-      "path": "microsoft.extensions.logging.configuration/8.0.1",
-      "hashPath": "microsoft.extensions.logging.configuration.8.0.1.nupkg.sha512"
-    },
-    "Microsoft.Extensions.ObjectPool/8.0.10": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-u7gAG7JgxF8VSJUGPSudAcPxOt+ymJKQCSxNRxiuKV+klCQbHljQR75SilpedCTfhPWDhtUwIJpnDVtspr9nMg==",
-      "path": "microsoft.extensions.objectpool/8.0.10",
-      "hashPath": "microsoft.extensions.objectpool.8.0.10.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/10.0.11": {
       "type": "package",
@@ -1895,34 +1590,6 @@
       "sha512": "sha512-SXcz+kF+4Oo9b1+55zntpJFYfwb1jw66ioxptyNOOTDc8g2FHnBFWjZpsWfCvZIhzr0x+4e2trVTs4OKwQfBtw==",
       "path": "microsoft.extensions.primitives/10.0.11",
       "hashPath": "microsoft.extensions.primitives.10.0.11.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Resilience/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2WsgG1zEPVtROZ+SHSAKiyuTREqFOOz/gPPDD/9BjfxYEpGa8E+QsD86UGeWIwnrplUxF6e7K388XkVDWBbSnQ==",
-      "path": "microsoft.extensions.resilience/8.10.0",
-      "hashPath": "microsoft.extensions.resilience.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Telemetry/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FcWCYW8W1O05w5tXtFRl4seCtTgV4ihTrCFgkbDUo3PIW2f5N8I1IGEE7KbdApxBFN0Oqf8FmVmtvjTncmlUBw==",
-      "path": "microsoft.extensions.telemetry/8.10.0",
-      "hashPath": "microsoft.extensions.telemetry.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Telemetry.Abstractions/8.10.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lnXq37FJZHJPbSJNEFoQVndG8cJvRbzeaUE9eoY1i6yfQUACHnEhuMnkZm7zPCkSqn0tylF0fITQn/RuDvt+0g==",
-      "path": "microsoft.extensions.telemetry.abstractions/8.10.0",
-      "hashPath": "microsoft.extensions.telemetry.abstractions.8.10.0.nupkg.sha512"
-    },
-    "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-irv0HuqoH8Ig5i2fO+8dmDNdFdsrO+DoQcedwIlb810qpZHBNQHZLW7C/AHBQDgLLpw2T96vmMAy/aE4Yj55Sg==",
-      "path": "microsoft.io.recyclablememorystream/3.0.0",
-      "hashPath": "microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512"
     },
     "Microsoft.NET.Test.Sdk/17.6.0": {
       "type": "package",
@@ -1993,27 +1660,6 @@
       "sha512": "sha512-eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
       "path": "nuget.frameworks/5.11.0",
       "hashPath": "nuget.frameworks.5.11.0.nupkg.sha512"
-    },
-    "Polly.Core/8.4.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BpE2I6HBYYA5tF0Vn4eoQOGYTYIK1BlF5EXVgkWGn3mqUUjbXAr13J6fZVbp7Q3epRR8yshacBMlsHMhpOiV3g==",
-      "path": "polly.core/8.4.2",
-      "hashPath": "polly.core.8.4.2.nupkg.sha512"
-    },
-    "Polly.Extensions/8.4.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GZ9vRVmR0jV2JtZavt+pGUsQ1O1cuRKG7R7VOZI6ZDy9y6RNPvRvXK1tuS4ffUrv8L0FTea59oEuQzgS0R7zSA==",
-      "path": "polly.extensions/8.4.2",
-      "hashPath": "polly.extensions.8.4.2.nupkg.sha512"
-    },
-    "Polly.RateLimiting/8.4.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ehTImQ/eUyO07VYW2WvwSmU9rRH200SKJ/3jku9rOkyWE0A2JxNFmAVms8dSn49QLSjmjFRRSgfNyOgr/2PSmA==",
-      "path": "polly.ratelimiting/8.4.2",
-      "hashPath": "polly.ratelimiting.8.4.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -2519,13 +2165,6 @@
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
     },
-    "System.Threading.RateLimiting/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
-      "path": "system.threading.ratelimiting/8.0.0",
-      "hashPath": "system.threading.ratelimiting.8.0.0.nupkg.sha512"
-    },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2623,13 +2262,6 @@
       "sha512": "sha512-OwHamvBdUKgqsXfBzWiCW/O98BTx81UKzx2bieIOQI7CZFE5NEQZGi8PBQGIKawDW96xeRffiNf20SjfC0x9hw==",
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
-    },
-    "YahooQuotesApi/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-EJPYj1o4E7EwVNCHSa69NY7Y0rCSvNF1Jumx7TQCUgPbUikoKfX69mvHo9d4BBCkfEpT0brJ40b5hOBdyVxRYQ==",
-      "path": "yahooquotesapi/7.0.0",
-      "hashPath": "yahooquotesapi.7.0.0.nupkg.sha512"
     },
     "TradingBot.Application/1.0.0": {
       "type": "project",

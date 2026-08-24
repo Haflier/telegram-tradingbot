@@ -192,10 +192,6 @@
             "Telegram.Bot": {
               "target": "Package",
               "version": "[22.8.0, )"
-            },
-            "YahooQuotesApi": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
