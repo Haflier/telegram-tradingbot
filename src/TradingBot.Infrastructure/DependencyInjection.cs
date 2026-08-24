@@ -10,6 +10,8 @@ using NodaTime;
 using YahooQuotesApi;
 using TradingBot.Infrastructure.Providers.Yahoo;
 using TradingBot.Infrastructure.Charts;
+using TradingBot.Infrastructure.Telegram;
+using TradingBot.Application.Services;
 
 namespace TradingBot.Infrastructure;
 
@@ -107,6 +109,38 @@ public static class DependencyInjection
 
         services.AddSingleton<IChartDimensions>(
             provider => provider.GetRequiredService<ChartConfiguration>());
+
+        services
+            .AddOptions<TelegramOptions>()
+            .Bind(configuration.GetSection(
+                TelegramOptions.SectionName))
+            .Validate(
+                options => !string.IsNullOrWhiteSpace(options.BotToken),
+                "Telegram BotToken must not be empty.")
+            .Validate(
+                options => options.TimeoutSeconds > 0,
+                "Telegram timeout must be greater than zero.")
+            .ValidateOnStart();
+
+        services.AddScoped<ITelegramSender, TelegramSender>();
+
+        services.AddScoped<IPriceDataProviderResolver,
+            PriceDataProviderResolver>();
+
+        services.AddScoped<ISymbolResolver,
+            SymbolResolver>();
+
+        services.AddScoped<ISmaCalculator,
+            SmaCalculator>();
+
+        services.AddScoped<IChartService,
+            ChartService>();
+
+        services.AddScoped<ICommandParser,
+            CommandParser>();
+
+        services.AddScoped<ITelegramBotHandler,
+            TelegramBotHandler>();
 
         return services;
     }

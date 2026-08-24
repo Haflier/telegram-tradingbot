@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a3h+vP7A4BRXDGg/isWR6yiWhMwdj9qKNl91HjvhVu49IoKAjzzNY6tECH92CkKZTJ29WgglVrn9Alqf6q5dSg==",
+  "dgSpecHash": "v7AhjUTxv1Nx1ogCN8/6N5VqqS+XgyNb25HPKiaNS1lkruVKrI2UdBzS/PaESrtyyVzg/GoUmCsCDD0lIt0UHA==",
   "success": true,
   "projectFilePath": "/home/huj/code/TradingBot/src/TradingBot.Infrastructure/TradingBot.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -46,7 +46,9 @@
     "/home/huj/.nuget/packages/skiasharp.nativeassets.macos/3.119.0/skiasharp.nativeassets.macos.3.119.0.nupkg.sha512",
     "/home/huj/.nuget/packages/skiasharp.nativeassets.win32/3.119.0/skiasharp.nativeassets.win32.3.119.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.diagnostics.diagnosticsource/10.0.11/system.diagnostics.diagnosticsource.10.0.11.nupkg.sha512",
+    "/home/huj/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512",
     "/home/huj/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512",
+    "/home/huj/.nuget/packages/telegram.bot/22.8.0/telegram.bot.22.8.0.nupkg.sha512",
     "/home/huj/.nuget/packages/yahooquotesapi/7.0.0/yahooquotesapi.7.0.0.nupkg.sha512",
     "/home/huj/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.29/microsoft.aspnetcore.app.ref.8.0.29.nupkg.sha512"
   ],

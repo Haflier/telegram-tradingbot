@@ -12,6 +12,7 @@
           "Microsoft.Extensions.Options": "10.0.11",
           "NodaTime": "3.3.3",
           "ScottPlot": "5.1.59",
+          "Telegram.Bot": "22.8.0",
           "TradingBot.Application": "1.0.0",
           "TradingBot.Domain": "1.0.0",
           "YahooQuotesApi": "7.0.0"
@@ -630,11 +631,24 @@
           }
         }
       },
+      "System.Text.Json/8.0.5": {},
       "System.Threading.RateLimiting/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Threading.RateLimiting.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Telegram.Bot/22.8.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.11",
+          "System.Text.Json": "8.0.5"
+        },
+        "runtime": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "assemblyVersion": "22.8.0.0",
+            "fileVersion": "22.8.0.0"
           }
         }
       },
@@ -652,6 +666,7 @@
       },
       "TradingBot.Application/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.11",
           "TradingBot.Domain": "1.0.0"
         },
         "runtime": {
@@ -965,12 +980,26 @@
       "path": "system.diagnostics.diagnosticsource/10.0.11",
       "hashPath": "system.diagnostics.diagnosticsource.10.0.11.nupkg.sha512"
     },
+    "System.Text.Json/8.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
+      "path": "system.text.json/8.0.5",
+      "hashPath": "system.text.json.8.0.5.nupkg.sha512"
+    },
     "System.Threading.RateLimiting/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
       "path": "system.threading.ratelimiting/8.0.0",
       "hashPath": "system.threading.ratelimiting.8.0.0.nupkg.sha512"
+    },
+    "Telegram.Bot/22.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjrYN4P9blM/4HHkvWzLrDB+VAESCJhnFM+clzuVlgL41EFA1n1p31xuz9f5zrOkoA5BcdwAZ/uPdnaiClFrZA==",
+      "path": "telegram.bot/22.8.0",
+      "hashPath": "telegram.bot.22.8.0.nupkg.sha512"
     },
     "YahooQuotesApi/7.0.0": {
       "type": "package",

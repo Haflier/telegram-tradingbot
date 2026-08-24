@@ -6,5 +6,5 @@ public sealed class TelegramOptions
 
     public string BotToken { get; init; } = string.Empty;
 
-    public int TimeoutSeconds { get; init; } = 10;
+    public int TimeoutSeconds { get; init; } = 30;
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NPWmPanqKdbnbvZe+ePT94VkyZQvXqGef/78liOWmz2wfuGqy5GFNzmuhdGkbo3tlm4rig836LpKlsa/DcxQxg==",
+  "dgSpecHash": "DRkPgksmIZJ4T+VnB/HL1PFa46/++m99IQcwHBZqNo0ao0+Yj4ZrjKmkYJlZozd/gA3yq6t0x0F5xjMvw4uLXQ==",
   "success": true,
   "projectFilePath": "/home/huj/code/TradingBot/src/TradingBot.Application/TradingBot.Application.csproj",
   "expectedPackageFiles": [
+    "/home/huj/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/home/huj/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.29/microsoft.aspnetcore.app.ref.8.0.29.nupkg.sha512"
   ],
   "logs": []

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TradingBot.Application\TradingBot.Application.csproj" />
+    <ProjectReference Include="..\TradingBot.Infrastructure\TradingBot.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

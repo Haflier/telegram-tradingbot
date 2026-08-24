@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sh+LhB58lXZ7mebAgYmQQ8rmUNFKPdvO+Zw5JLqyb8mzErUOqW0OyKAe44JtDea4X6wrq1Vg1fvBvLInMYWLLA==",
+  "dgSpecHash": "nysGFPkw6sZkiEyJF7OI/Q/QBnqeHEC0A831xYcJLBYpFtvNfhzX4gmwSasHC5cJEjL5AQ0jTaejymurJqxuIg==",
   "success": true,
   "projectFilePath": "/home/huj/code/TradingBot/tests/TradingBot.UnitTests/TradingBot.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -119,6 +119,7 @@
     "/home/huj/.nuget/packages/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "/home/huj/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512",
     "/home/huj/.nuget/packages/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512",
@@ -127,6 +128,7 @@
     "/home/huj/.nuget/packages/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/huj/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
+    "/home/huj/.nuget/packages/telegram.bot/22.8.0/telegram.bot.22.8.0.nupkg.sha512",
     "/home/huj/.nuget/packages/xunit/2.4.2/xunit.2.4.2.nupkg.sha512",
     "/home/huj/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
     "/home/huj/.nuget/packages/xunit.analyzers/1.0.0/xunit.analyzers.1.0.0.nupkg.sha512",

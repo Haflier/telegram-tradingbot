@@ -270,3 +270,4 @@
 /home/huj/code/TradingBot/tests/TradingBot.UnitTests/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll
 /home/huj/code/TradingBot/tests/TradingBot.UnitTests/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll
 /home/huj/code/TradingBot/tests/TradingBot.UnitTests/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll
+/home/huj/code/TradingBot/tests/TradingBot.UnitTests/bin/Debug/net8.0/Telegram.Bot.dll
