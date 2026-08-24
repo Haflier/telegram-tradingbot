@@ -5,7 +5,7 @@ namespace TradingBot.Infrastructure.Configuration;
 
 public sealed class ChartConfiguration(
     IOptions<ChartOptions> options)
-    : IChartConfiguration
+    : IChartConfiguration, IChartDimensions
 {
     private readonly ChartOptions _options = options.Value;
 
@@ -14,4 +14,10 @@ public sealed class ChartConfiguration(
 
     public int MovingAveragePeriod =>
         _options.MovingAveragePeriod;
+
+    public int Width =>
+        _options.Width;
+
+    public int Height =>
+        _options.Height;
 }

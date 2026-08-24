@@ -1,23 +1,29 @@
 using YahooResult = YahooQuotesApi.Result<YahooQuotesApi.History>;
-using YahooQuotesApi;
 using TradingBot.Infrastructure.Providers.Yahoo;
 
 namespace TradingBot.UnitTests.Infrastructure.Yahoo;
 
-internal sealed class FakeYahooHistoryClient : IYahooHistoryClient
+internal sealed class FakeYahooHistoryClient(
+    YahooResult result,
+    Exception? exception = null)
+    : IYahooHistoryClient
 {
-    private readonly YahooResult _result;
-
-    public FakeYahooHistoryClient(YahooResult result)
+    public async Task<YahooResult> GetHistoryAsync(
+    string symbol,
+    string interval,
+    CancellationToken cancellationToken)
     {
-        _result = result;
-    }
+        cancellationToken.ThrowIfCancellationRequested();
 
-    public Task<YahooResult> GetHistoryAsync(
-        string symbol,
-        string interval,
-        CancellationToken cancellationToken)
-    {
-        return Task.FromResult(_result);
+        if (exception is not null)
+        {
+            throw exception;
+        }
+
+        await Task.Yield();
+
+        cancellationToken.ThrowIfCancellationRequested();
+
+        return result;
     }
 }

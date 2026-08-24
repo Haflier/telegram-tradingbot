@@ -9,6 +9,7 @@ using Microsoft.Extensions.Options;
 using NodaTime;
 using YahooQuotesApi;
 using TradingBot.Infrastructure.Providers.Yahoo;
+using TradingBot.Infrastructure.Charts;
 
 namespace TradingBot.Infrastructure;
 
@@ -96,6 +97,16 @@ public static class DependencyInjection
 
         services.AddSingleton<IYahooHistoryClient,
             YahooHistoryClient>();
+
+        services.AddScoped<IChartGenerator, ScottPlotChartGenerator>();
+
+        services.AddSingleton<ChartConfiguration>();
+
+        services.AddSingleton<IChartConfiguration>(
+            provider => provider.GetRequiredService<ChartConfiguration>());
+
+        services.AddSingleton<IChartDimensions>(
+            provider => provider.GetRequiredService<ChartConfiguration>());
 
         return services;
     }

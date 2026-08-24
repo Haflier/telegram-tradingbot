@@ -179,6 +179,10 @@
               "target": "Package",
               "version": "[3.3.3, )"
             },
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[5.1.59, )"
+            },
             "YahooQuotesApi": {
               "target": "Package",
               "version": "[7.0.0, )"
