@@ -39,7 +39,7 @@ public sealed class TelegramBotHandler(
                 Get market charts and price information directly from Telegram.
 
                 Usage:
-                /chart BTC 1d
+                /chart <symbol> <timeframe>
 
                 Examples:
                 /chart BTC 4h
@@ -47,9 +47,7 @@ public sealed class TelegramBotHandler(
                 /chart AAPL 1d
 
                 Supported timeframes:
-                1m 5m 15m
-                1h 4h 1d
-                1w 1mo
+                1m 5m 15m 1h 4h 1d 1w
                 """,
                 cancellationToken);
 
