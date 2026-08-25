@@ -34,22 +34,22 @@ public sealed class TelegramBotHandler(
             await telegramSender.SendTextAsync(
                 message.ChatId,
                 """
-                <b>Welcome to Cryptockerbot! 📈</b>
+                Welcome to @Cryptockerbot! 📈
 
                 Get market charts and price information directly from Telegram.
 
-                <b>Usage:</b>
-                <code>/chart BTC 1d</code>
+                Usage:
+                /chart BTC 1d
 
-                <b>Examples:</b>
-                <code>/chart BTC 4h</code>
-                <code>/chart ETH 1h</code>
-                <code>/chart AAPL 1d</code>
+                Examples:
+                /chart BTC 4h
+                /chart ETH 1h
+                /chart AAPL 1d
 
-                <b>Supported timeframes:</b>
-                <code>1m</code> <code>5m</code> <code>15m</code>
-                <code>1h</code> <code>4h</code> <code>1d</code>
-                <code>1w</code> <code>1mo</code>
+                Supported timeframes:
+                1m 5m 15m
+                1h 4h 1d
+                1w 1mo
                 """,
                 cancellationToken);
 
